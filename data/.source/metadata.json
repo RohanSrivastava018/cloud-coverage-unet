@@ -1,0 +1,8 @@
+{
+    "description": "In many uses of multispectral satellite imagery, clouds obscure what we really care about - for example,\ntracking wildfires, mapping deforestation, or monitoring crop health. Being able to more accurately remove\nclouds from satellite images filters out interference, unlocking the potential of a vast range of use cases.\nWith this goal in mind, this training dataset was generated as part of [crowdsourcing competition](https://www.drivendata.org/competitions/83/cloud-cover/), and later\non was valid",
+    "tags": [
+        "sentinel-2",
+        "segmentation",
+        "cloud"
+    ]
+}

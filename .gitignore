@@ -1,0 +1,11 @@
+# images
+**/*.tif
+**/*.jpg
+
+# model and binary files
+**/*.h5
+**/*.npy
+
+# other
+**/*.csv
+clustering.ipynb

@@ -1,0 +1,38 @@
+
+# Setting PATH for Python 3.8
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+PATH="/Users/rohansrivastava/Desktop/cloud-coverage-unet/azcopy_darwin_amd64_10.24.0:${PATH}"
+export PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/rohansrivastava/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/rohansrivastava/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/rohansrivastava/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/rohansrivastava/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+alias phoenix="ssh rsrivastava61@login-phoenix.pace.gatech.edu"
+alias hive="ssh rsrivastava61@login-hive.pace.gatech.edu"
+export BP="~/.bash_profile"
+alias bp="vim $BP"
+alias unixp="cd /Users/rohansrivastava/Desktop/unix_practice"
+alias srbp="source ~/.bash_profile"
+alias plogin="rsrivastava61@login-phoenix.pace.gatech.edu"
+alias qsub="qsub -l nodes=1:ppn=1 -l walltime=6:00:00 -l pmem=2gb -A GT-jw254 -q inferno -I"
+alias mhpath="cd ~/Desktop/software"
+alias hive="ssh rsrivastava61@login-hive.pace.gatech.edu"
+alias dpath="cd /Users/rohansrivastava/Desktop/CS2110"
+alias docker="./cs2110docker.sh"
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
+export PS1="[\[\e[37;45m\]\t\[\e[0m\]]\[\e[35;47m\] rohan \[\e[0m\] \[\e[32m\]\W\[\e[0m\] $ "
+
